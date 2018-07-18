@@ -16,7 +16,7 @@ const clovaSkillHandler = clova.Client
     });
   })
   // カスタムインテント or ビルトインインテント
-  .onIntentRequest(async responseHelper => {
+  .onIntentRequest(responseHelper => {
     const intent = responseHelper.getIntentName();
     let speech;
     switch (intent) {
